@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<h2 style="font-family: 'Times New Roman', Times, serif" >Employee Attendance Management</h2>
+<div class="row">
+{% for project in the_attendance %}
+    <div class="col-md-10">
+        <div class="card mb-2">
+            <img class="card-img-top" src="{% static 'img/cover1.png' %}" style="width: 900px; vertical-align: right" >
+            <div class="card-body">
+                <h5 class="card-title">Employee Attendance Management</h5>
+                <p class="card-text" style="width: 900px">Previously, in almost all organizations attendance management system for employees was managed and maintained on papers, which caused several hassles and faults and the method was inefficient too. Sometimes inadequate employee attendance system brings gap between managers and administration/employees/customers. The reason behind this is that their payroll processing is calculated on the basis of data collected from attendance management system for employees
+                With the evolution of automation, attendance management system for employees also took a different look. With the growth of technology, the revolutionary invention of computer became the basic factor of successful business which optimizes most of the manual work in a click. It is noteworthy that employee attendance system nowadays has also been computerized which remarkably reduces the chances of human errors.</p>
+                
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
